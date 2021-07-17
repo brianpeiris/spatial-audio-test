@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>spatial test</title>
+    <style>
+      body {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 12pt;
+        color: white;
+        margin: 20px;
+      }
+      canvas {
+        background: white;
+      }
+      body > * { margin: 4px 0; }
+      a {
+        color: white;
+      }
+      .credit { font-size: 9pt; }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <span id="info">paused</span>
+    <a href="?ramped">ramped</a>
+    <a href="?instant">instantaneous</a>
+
+    <audio id="audio" controls src="bensound-acousticbreeze.mp3" loop></audio>
+
+    <script src="index.js"></script>
+
+    <span class="credit">audio from bensound.com</span>
+  </body>
+</html>
